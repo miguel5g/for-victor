@@ -37,7 +37,7 @@ const colors = {
   },
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const buttonEle = document.getElementById('action');
   const countEle = document.getElementById('count');
   const bodyEle = document.querySelector('body');
@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     countEle.innerHTML = `${count}x`;
+
+    countEle.style.animation = '';
+    setTimeout(() => {
+      countEle.style.animation = `Update 0.2s`;
+    }, 50);
   }
 
   buttonEle.addEventListener('click', handleClick);

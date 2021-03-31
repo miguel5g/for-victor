@@ -13,6 +13,8 @@ body {
   min-height: 100vh;
   
   font-family: 'Courier New', Courier, monospace;
+
+  transition: all 0.2s;
 }
 
 button {
@@ -43,4 +45,24 @@ h1 span {
   margin-right: 13px;
 
   font-size: large;
+
+  transform: rotate(-25deg);
+  transition: all 0.15s;
+}
+
+@keyframes Update {
+  0% {
+    transform: rotate(-25deg);
+    transform: scale(1);
+  }
+  
+  35% {
+    transform: rotate(-25deg);
+    transform: scale(3);
+  }
+  
+  100% {
+    transform: rotate(-25deg);
+    transform: scale(1);
+  }
 }
