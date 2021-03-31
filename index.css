@@ -54,6 +54,38 @@ h1 span {
   animation: Shake 0.5s infinite;
 }
 
+strong {
+  position: fixed;
+  display: flex;
+  align-items: center;
+
+  bottom: 20px;
+
+  font-weight: normal;
+  font-size: large;
+}
+
+strong a {
+  display: flex;
+  align-items: center;
+
+  margin-left: 7px;
+
+  font-weight: bold;
+  font-style: italic;
+}
+
+strong a img {
+  margin-right: 3px;
+
+  border-radius: 4px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @keyframes Update {
   0% {
     transform: scale(1) rotate(-25deg);
