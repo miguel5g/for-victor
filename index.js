@@ -53,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
       buttonEle.style.color = `${colors[count].text}`;
     }
 
+    if (count > 15) {
+      buttonEle.classList.add('shake');
+    }
+
     countEle.innerHTML = `${count}x`;
 
     countEle.style.animation = '';
